@@ -86,7 +86,7 @@
          "required": true,
          "value": "MitsuriXSupport"
       },
-      "MONGO_DB_URL": {
+      "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
          "value": "mongodb+srv://zerohisoka:kumar123@cluster0.8sg2a.mongodb.net/Cluster0?retryWrites=true&w=majority"
