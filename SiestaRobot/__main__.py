@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             random.choice(MIKU_IMG),
-            caption=gs(chat.id, "group_start_text").format(
+            caption=gs(chat.id, "TEXTT". format(
                 escape_markdown(uptime),
                 ),
 reply_markup=InlineKeyboardMarkup(
@@ -836,7 +836,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Umm, Can i have ur Baby 👉👈 if u don't mind.....**[.](https://telegra.ph/file/b3d283f1040d5a2ce8aac.jpg)""",
+                f"""**I am Ready Again to Slay Demons.....**[.](https://telegra.ph/file/3fc54dc88181057592c01.jpg)""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
