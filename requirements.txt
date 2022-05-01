@@ -7,6 +7,7 @@ beautifulsoup4
 requests
 python-telegram-bot==13.11
 SQLAlchemy==1.4.31
+opencv-python-headless==4.5.4.60
 psycopg2-binary
 feedparser
 faker
@@ -75,12 +76,12 @@ envparse
 #profanity (Credits to Julia)
 better_profanity
 textblob
-numpy
+NumPy==1.21.2
 nudepy
 nekos.py
 motor
 gpytranslate
-fontTools
+fontTools==4.27.1
 odmantic
 tzlocal
 pendulum
@@ -94,6 +95,6 @@ hentai --only-binary all
 natsort
 html-telegraph-poster
 NHentai-API
-opencv-python-headless
+
 
 
