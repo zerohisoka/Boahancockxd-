@@ -48,7 +48,7 @@ from SiestaRobot.modules.helper_funcs.chat_status import sudo_plus
 from SiestaRobot.modules.helper_funcs.extraction import extract_user
 from SiestaRobot import telethn
 
-MIKU_IMG = "https://telegra.ph/file/d9986b3e88fdadc021279.jpg"
+MIKU_IMG = "https://telegra.ph/file/5f1f7fa3cce1a39a3c53e.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -316,26 +316,28 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is  ' My Husband'."
+        text += "\n\nThis person is 'My Lord'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is 'My Homie'."
+        text += "\n\nThis user is  'Hashira'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis person is 'My Boyfriend'."
+        text += "\n\nThis User is 'Kinoe'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThis person is ' My Follower'."
+        text += "\n\nThis User is My ' Lover'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThis person is 'My Hubbie'."
+        text += "\n\nThis User is My 'Besto!'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Wolf'."
+        text += "\n\nThe Disaster level of this person is 'Friend'."
         disaster_level_present = True
-    elif user.id == 5291415314:
-         text += "\n\nCo-Owner Of A Bot."
-         disaster_level_present = True
+    elif user.id == 1938491135:
+        text += "\n\n Co-Owner Of Mitsuri."
+        disaster_level_present = True
+
+    
 
 
     try:
@@ -468,15 +470,15 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/akira_updates)\n\n"
-            + "\n╘══「 by [S L A D E ♡](https://t.me/simp_ly_naveen) 」\n",
+            + f"\n\n [✦ᴜᴘᴅᴀᴛᴇs](https://t.me/MitsuriXupdates) | [✦sᴜᴘᴘᴏʀᴛ](https://t.me/MitsuriXSupport)\n\n"
+            + "╘══「 by [ᴋᴀᴢᴜᴛᴏʀᴀ X Husbandoo](https://t.me/MitsuriXOwner) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="My Badass Owner",
-                             url="https://t.me/simp_ly_naveen")
+                             text="Kazu X Husbandoo ♡",
+                             url="https://t.me/MitsuriXOwner")
                      ] 
                 ]
             ),
@@ -489,20 +491,12 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/akira_updates)\n\n"
+                    + f"\n\n [✦ᴜᴘᴅᴀᴛᴇs](https://t.me/MitsuriXupdates) | [✦sᴜᴘᴘᴏʀᴛ](https://t.me/{SUPPORT_CHAT})\n\n"
                 )
-                + "╘══「 by [S L A D E ♡](https://t.me/simp_ly_naveen) 」\n"
+                + "╘══「 by [ᴋᴀᴢᴜᴛᴏʀᴀ X Husbandoo](https://t.me/MitsuriXOwner) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                  [                  
-                       InlineKeyboardButton(
-                             text="My GitHub acc",
-                             url="github.com/Nchuuya")
-                     ] 
-                ]
-            ),
+            disable_web_page_preview=True,
         )
         
         
