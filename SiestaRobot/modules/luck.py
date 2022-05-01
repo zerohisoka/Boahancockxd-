@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SiestaRobot import DEV_USERS, SUPPORTERS,pbot as app
+from SiestaRobot import DEV_USERS, DEMONS,pbot as app
 
-SUDOERS = SUPPORTERS.append(DEV_USERS)
+SUDOERS = DEMONS.append(DEV_USERS)
 
 __mod_name__ = "GAMEY 🎁"
 __help__ = """
