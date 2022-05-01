@@ -4,6 +4,7 @@ import json
 import importlib
 import time
 import re
+import random
 import sys
 import traceback
 
@@ -202,7 +203,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                PM_PHOTO,
+                random.choice(MIKU_IMG),
                 caption=gs(chat.id, "pm_start_text").format(                    
                     escape_markdown(first_name),
                     escape_markdown(uptime),
@@ -213,11 +214,11 @@ def start(update: Update, context: CallbackContext):
                         [
                             
                             InlineKeyboardButton(
-                                text=gs(chat.id, "xd_button"), url="t.me/akiratodobot?startgroup=new"),
+                                text=gs(chat.id, "xd_button"), url="t.me/mitsurixbot?startgroup=new"),
 
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "support_button"), url="t.me/akiratodosupport"),
+                            InlineKeyboardButton(text=gs(chat.id, "support_button"), url="t.me/MitsuriXSupport"),
                         ],
                            
 
@@ -228,17 +229,18 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            text=gs(chat.id, "group_start_text").format(
+        update.effective_message.reply_photo(
+            PM_PHOTO,
+            caption=gs(chat.id, "group_start_text").format(
                 escape_markdown(uptime),
                 ),
 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "Owner", url=f"https://t.me//simp_ly_naveen"),
+                                "Owner", url=f"https://t.me//MitsuriXOwner"),
                             InlineKeyboardButton(
-                                "Updates", url=f"https://t.me/akira_updates")
+                                "Updates", url=f"https://t.me/MitsuriXdates")
                 
                         ],
                     ]
@@ -562,7 +564,7 @@ def get_help(update: Update, context: CallbackContext):
             module = args[1].lower()
             moduls = module.capitalize()
             update.effective_message.reply_photo(
-                SIESTA_IMG,
+                PM_PHOTO,
                 caption=gs(chat.id, "group_help_modules_text").format(
                     escape_markdown(moduls),
                     ),
@@ -581,8 +583,9 @@ def get_help(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
             )
             return
-        update.effective_message.reply_text(
-            text=gs(chat.id, "group_help_text"),
+        update.effective_message.reply_photo(
+            PM_PHOTO,
+            caption=gs(chat.id, "group_help_text"),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
