@@ -9,7 +9,6 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-"""
   🌺══════「 [ᴍɪᴛsᴜʀɪ ᴋᴀɴʀᴏᴊɪ](https://kimetsu-no-yaiba.fandom.com/wiki/Mitsuri_Kanroji)」══════🌺
 *ᴋᴏɴɪɴᴄʜɪᴡᴀ! {},*
 *ᴡᴀᴛᴀsʜɪ ᴏᴍᴀᴇᴡᴀ ᴋᴀɴʀᴏᴊɪ ᴍɪᴛsᴜʀɪ 
@@ -21,7 +20,7 @@ pm_start_text: |
 ✓• {} *ᴜꜱᴇʀ, ᴀᴄʀᴏꜱꜱ* {} *ᴄʜᴀᴛꜱ.*
 ╚═══════•❃•❀•❃════════╝
 ➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
-"""
+
 group_start_text: |
   **ᴡᴀᴛᴀsʜɪ ᴏᴍᴀᴇᴡᴀ ᴋᴀɴʀᴏᴊɪ ᴍɪᴛsᴜʀɪ 
 *ɪ ᴀᴍ ʟᴏᴠᴇ ʜᴀsʜɪʀᴀ 
