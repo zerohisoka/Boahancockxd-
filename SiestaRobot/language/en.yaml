@@ -9,19 +9,22 @@ set_chat_lang: "Great, using {} Language it is from now on!"
 
 # PM Text
 pm_start_text: |
-  *Hey Darling, {} ♡*
-  ✪ I'm ʙᴏᴀ ʜᴀɴᴄᴏᴄᴋ ♡ here to manage your groups thanks to Using me !
-
-  ➖➖➖➖➖♡➖➖♡➖➖➖➖➖➖
-  ✓• *Users:* `{}` *Chats:* `{}`
-  It Has Music too Yuuki 3.0 Blazing Fast Music ✨
-  ➖➖➖➖➖♡➖➖♡➖➖➖➖➖➖
-
-  ✪ Hit /help to see my available commands.
-   
+  🌺══════「 [ᴍɪᴛsᴜʀɪ ᴋᴀɴʀᴏᴊɪ](https://kimetsu-no-yaiba.fandom.com/wiki/Mitsuri_Kanroji)」══════🌺
+*ᴋᴏɴɪɴᴄʜɪᴡᴀ! {},*
+*ᴡᴀᴛᴀsʜɪ ᴏᴍᴀᴇᴡᴀ ᴋᴀɴʀᴏᴊɪ ᴍɪᴛsᴜʀɪ 
+*ɪ ᴀᴍ ʟᴏᴠᴇ ʜᴀsʜɪʀᴀ 
+ɪ ᴄᴀɴ sʟᴀʏ ᴅᴇᴍᴏɴs ᴡɪᴛʜ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ ɢɪᴠᴇ ᴍᴇ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛs ᴛᴏ sʜᴏᴡ ʏᴏᴜ ᴍʏ ᴅᴇᴍᴏɴ sʟᴀʏᴇʀ ᴍᴀʀᴋ*
+╔═══════•❃•❀•❃════════╗
+✓• *ᴜᴘᴛɪᴍᴇ:* {}
+╠════════════════════╣
+✓• {} *ᴜꜱᴇʀ, ᴀᴄʀᴏꜱꜱ* {} *ᴄʜᴀᴛꜱ.*
+╚═══════•❃•❀•❃════════╝
+➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
+"""
 group_start_text: |
-  *Umm, Shoto san can i Have ur Baby 👉👈 cause i m working Perfectly[...](https://telegra.ph/file/06973fb8348fe020fb3b9.mp4)
-  *Started active since :* `{}`
+  **ᴡᴀᴛᴀsʜɪ ᴏᴍᴀᴇᴡᴀ ᴋᴀɴʀᴏᴊɪ ᴍɪᴛsᴜʀɪ 
+*ɪ ᴀᴍ ʟᴏᴠᴇ ʜᴀsʜɪʀᴀ 
+ active since :* `{}`
 
 pm_about_text: |
   ✺ Hey Darling I'm *Boa Hancock Robot*, a powerful group management bot built to help you manage your group easily. ✺(https://telegra.ph/file/5c0338d6c76ed65100183.mp4)
