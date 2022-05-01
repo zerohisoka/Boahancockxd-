@@ -219,6 +219,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "support_button"), url="t.me/MitsuriXSupport"),
+                            InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
                         ],
                            
 
@@ -230,7 +231,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            PM_PHOTO,
+            random.choice(MIKU_IMG),
             caption=gs(chat.id, "group_start_text").format(
                 escape_markdown(uptime),
                 ),
@@ -238,7 +239,7 @@ reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "Owner", url=f"https://t.me//MitsuriXOwner"),
+                                "Owner", url=f"https://t.me//MitsuriXOwners"),
                             InlineKeyboardButton(
                                 "Updates", url=f"https://t.me/MitsuriXdates")
                 
