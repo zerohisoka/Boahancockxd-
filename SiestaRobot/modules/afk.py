@@ -169,7 +169,8 @@ __handlers__ = [
     (AFK_REPLY_HANDLER, AFK_REPLY_GROUP),
 ]
 
-__help__=
+
+__help__ =
 """
 ──「 Info and AFK 」──
 
