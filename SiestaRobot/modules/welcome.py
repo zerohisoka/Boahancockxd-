@@ -1036,10 +1036,9 @@ HELPABLE = {}
 
 HELP_STRINGS = """
 Hey [{}](tg://user?id={}) Watashi wa Mitsuri Hajime Mashite! 
-I Help Admins To Manage Their Groups! 
+I Help Admins To Manage Their Groups With my Love ♡
 Main commands available :
  ‣ /help: PM's you this message.
-
  ‣ /help <module name>: PM's you info about that module.
  ‣ /settings:
    • in PM: will send you your settings for all supported modules.
