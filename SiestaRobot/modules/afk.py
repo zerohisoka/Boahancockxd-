@@ -204,3 +204,5 @@ __help__=
       
     *What is that health thingy?*
     Come and see [HP System explained](https://t.me/MitsuriXupdates/2)
+    """
+
