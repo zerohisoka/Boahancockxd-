@@ -39,7 +39,7 @@ from SiestaRobot.modules import ALL_MODULES
 from SiestaRobot.modules.helper_funcs.chat_status import is_user_admin
 from SiestaRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from SiestaRobot.script import GC, PM_PHOTO, MIKU_N_IMG, MIKU_IMG 
+from SiestaRobot.script import GC, PM_PHOTO, MIKU_N_IMG, MIKU_IMG, TEXXT
 from telegram.error import (
     BadRequest,
     ChatMigrated,
