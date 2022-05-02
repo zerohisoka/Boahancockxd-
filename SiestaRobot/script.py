@@ -26,6 +26,6 @@ MIKU_N_IMG = (
 
 )
 
-PM_PHOTO = "https://telegra.ph/file/3fc54dc88181057592c01.jpg"
+PM_PHOTO = "https://telegra.ph/file/ef33a463ab376844e9283.jpg"
 
 GC = "https://telegra.ph/file/d9986b3e88fdadc021279.jpg"
