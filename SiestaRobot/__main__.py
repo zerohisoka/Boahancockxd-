@@ -231,7 +231,8 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-                random.choice(MIKU_IMG), TEXXT.format(mention_html(update.effective_user.id, update.effective_user.first_name)),
+                random.choice(MIKU_N_IMG),
+                caption=gs(chat.id, "group_start_text").format(mention_html(update.effective_user.id, update.effective_user.first_name)),
             parse_mode=ParseMode.HTML,
                 
 reply_markup=InlineKeyboardMarkup(
