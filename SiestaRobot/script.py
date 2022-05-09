@@ -18,11 +18,11 @@ MIKU_IMG = (
 TEXXT = "<b>Heya</b> {} <b>I am Ready To Slay Demons Again</b>"
 
 MIKU_N_IMG = (
-      "https://telegra.ph/file/262cf5bb9780cbb96afb7.jpg",
-      "https://telegra.ph/file/2371af37367b3454e9cdf.jpg",
-      "https://telegra.ph/file/b3d283f1040d5a2ce8aac.jpg",
-      "https://telegra.ph/file/d9986b3e88fdadc021279.jpg",
-      "https://telegra.ph/file/262cf5bb9780cbb96afb7.jpg",
+      "https://telegra.ph/file/32061f23f445405551eb5.jpg",
+      "https://telegra.ph/file/7a7ff8264078c8f18a672.jpg",
+      "https://telegra.ph/file/8bcb143d0b4dc18a7d941.jpg",
+      "https://telegra.ph/file/9cc937263ed996cd87f04.jpg",
+      "https://telegra.ph/file/b03114f145bf39e6ba4b3.jpg",
 
 )
 
