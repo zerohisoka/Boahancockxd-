@@ -11,14 +11,7 @@
     
    "logo":    "https://telegra.ph/file/566d0f3fb2107bd8ecb27.jpg",  
    "repository": "https://github.com/Nchuuya/Sanji", 
-   "addons": [
-          {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
+
    "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
@@ -36,12 +29,12 @@
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "8276637"
+         "value": "16279817"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "c412d38a4ebcc2b32621a5c2be276d13"
+         "value": "0d2656dab88ee142fba5633fe16fb6ce"
       },    
       "MONGO_DB": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
