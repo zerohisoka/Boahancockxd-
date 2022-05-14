@@ -1035,8 +1035,8 @@ def __chat_settings__(chat_id, user_id):
 HELPABLE = {}
 
 HELP_STRINGS = """
-Hey [{}](tg://user?id={}) Watashi wa Mitsuri Hajime Mashite! 
-I Help Admins To Manage Their Groups With my Love ♡
+Hey [{}](tg://user?id={}) your *Boa Hancock* is here! 
+I Help Admins To Manage Their Groups! 
 Main commands available :
  ‣ /help: PM's you this message.
  ‣ /help <module name>: PM's you info about that module.
