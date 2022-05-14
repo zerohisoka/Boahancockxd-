@@ -2,9 +2,9 @@ import html
 import os
 import json
 import importlib
+import random
 import time
 import re
-import random
 import sys
 import traceback
 
@@ -38,8 +38,8 @@ from SiestaRobot import (
 from SiestaRobot.modules import ALL_MODULES
 from SiestaRobot.modules.helper_funcs.chat_status import is_user_admin
 from SiestaRobot.modules.helper_funcs.misc import paginate_modules
+from SiestaRobot.script import MIKU_IMG
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from SiestaRobot.script import GC, PM_PHOTO, MIKU_N_IMG, MIKU_IMG, TEXXT
 from telegram.error import (
     BadRequest,
     ChatMigrated,
@@ -85,7 +85,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-SIESTA_IMG = "https://telegra.ph/file/d9986b3e88fdadc021279.jpg"
+SIESTA_IMG = "https://telegra.ph/file/6d3e3ef24f64fb6e35df0.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @saint_foire \
@@ -203,7 +203,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                random.choice(MIKU_IMG),
+                random.choice(MIKU_IMG), 
                 caption=gs(chat.id, "pm_start_text").format(                    
                     escape_markdown(first_name),
                     escape_markdown(uptime),
@@ -212,18 +212,14 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "xd_button"), url="t.me/mitsurixbot?startgroup=new"),
-
-                        ],
-                        [
-                            InlineKeyboardButton(text=gs(chat.id, "support_button"), url="t.me/MitsuriXSupport"),
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
                         ],
-                           
-
+                        [
+                            InlineKeyboardButton(text=gs(chat.id, "support_button"), url="https://t.me/BoaHancock_Support"),
+                            
                         
+                        ],
+   
                     ]
                 ),
                 parse_mode=ParseMode.MARKDOWN,
@@ -231,24 +227,24 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-                random.choice(MIKU_N_IMG),
-                caption=gs(chat.id, "group_start_text").format(mention_html(update.effective_user.id, update.effective_user.first_name)),
-            parse_mode=ParseMode.HTML,
-                
+            random.choice(MIKU_IMG),
+            caption=gs(chat.id, "group_start_text").format(
+                escape_markdown(uptime),
+                ),
 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "Owner", url=f"https://t.me//MitsuriXOwners"),
+                                "𝐌𝐲 𝐃𝐚𝐫𝐥𝐢𝐧𝐠 💕💖", url=f"https://t.me//violaislove"),
                             InlineKeyboardButton(
-                                "Updates", url=f"https://t.me/MitsuriXdates")
+                                "•𝙰𝙷𝙹𝙸𝙽•", url=f"https://t.me/ahjinXnetwork")
                 
                         ],
                     ]
                 ),
             
 
-            
+            parse_mode=ParseMode.MARKDOWN
        )
 
 
@@ -564,9 +560,8 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             moduls = module.capitalize()
-            update.effective_message.reply_photo(
-                PM_PHOTO,
-                caption=gs(chat.id, "group_help_modules_text").format(
+            update.effective_message.reply_text(
+                text=gs(chat.id, "group_help_modules_text").format(
                     escape_markdown(moduls),
                     ),
                 reply_markup=InlineKeyboardMarkup(
@@ -585,7 +580,7 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_photo(
-            PM_PHOTO,
+            random.choice(MIKU_IMG),
             caption=gs(chat.id, "group_help_text"),
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -836,7 +831,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**I am Ready Again to Slay Demons.....**[.](https://telegra.ph/file/3fc54dc88181057592c01.jpg)""",
+                f"""**Yes Darling ❤️, i am activated!**""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
